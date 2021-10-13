@@ -1,0 +1,337 @@
+body{
+    margin: 0;
+    font-family: arial,sans-serif;
+    font-size: 14px;
+  background-color:#f3f2ee;
+  
+  width: 100%;
+ 
+}
+a{
+    color: inherit;
+    text-decoration: none;
+}
+#Search{
+  max-height: 100%;
+    width: 250px;
+    padding: 10px;
+    border: 0px;
+    outline: none;
+    font-size: small;
+}
+#Search::placeholder{
+    color: rgba(0, 0, 0, 0.274);
+}
+#submit>svg{
+    fill:white;
+}
+#submit{
+    position: relative;
+    color: white;
+    height: 40px;
+
+    width: 110px;
+    border: 0px;
+    border-radius: 25px;
+    background-image: linear-gradient(316deg,rgb(255, 123, 0),yellow);
+   cursor: pointer;
+}
+
+#submit:hover{
+    background-image: linear-gradient(316deg,orange,yellow);
+   
+
+}
+#form{
+   height: 40px;
+    background: white;
+    padding-left:10px ;
+   border-radius:25px;
+  width: 384px;
+ margin: auto;
+ box-shadow: 0 0 1rem rgba(255, 166, 0, 0.164);
+  
+}
+
+#logo{
+    margin-left: 30px;
+    width: 132px;
+    height: 132px;
+}
+main{
+    max-width: 100vw;
+    display: flex;
+    margin: 0;
+    padding: 20px;
+    
+}
+#select{
+    width: 25%;
+    background: white;
+
+
+}
+#product{
+width: 50%;
+text-align: center;
+
+}
+
+#list{
+    background: white;
+    color: rgba(255, 166, 0, 0.842);
+
+    text-align: center;
+
+
+ width: 25%;
+}
+
+#all-page{
+   max-width: 100%;
+
+border-top:1px white solid ;
+    display: flex;
+}
+.box{
+    height: 60px;
+    padding: 10px;
+   cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid  rgba(128, 128, 128, 0.041);
+}
+.box:hover{
+   background-color:rgba(224, 202, 161, 0.075);
+}
+
+.box>img{
+ width: 60px;
+ height: 60px;
+
+ border-radius: 50%;
+}
+.title{
+    width: 60%;
+    color: rgba(255, 166, 0, 0.842);
+    
+text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+
+@media screen and (max-width:900px){
+    #select{
+    flex: 1 0 50%;
+   
+    }
+    #product{
+        flex: 1 0 50%;   
+    }
+    
+    #list{
+    flex: 100%;
+    }
+    
+    #all-page{
+        width:100vw;
+        display: flex;
+   flex-wrap:wrap ;
+    
+    }
+    #Search{
+      border-radius: 50%;
+        width: 60%;
+    
+    }
+ 
+    #submit{
+       max-height: 100%;
+        width:30%;
+     float: right;
+    }
+ 
+    #form{
+      
+      width:80%;
+ 
+    }
+    #logo{
+        margin-left: 0;
+        width:20%;
+        height:20%;
+    }
+    
+}
+@media screen and (max-width:600px){
+    #select{
+    flex: 100%;
+   
+    }
+    #product{
+        flex: 100%;   
+    }
+}
+.icon{
+    width: 20px;
+    height: 20px;
+ 
+    margin:0 10px;
+}
+.Details{
+    background-color: #d4d4d32f;
+   padding: 50px 5px;
+display: flex;
+justify-content: space-between;
+height: 20px;
+}
+.iconheart:active{
+    fill-opacity: inherit;
+}
+
+p{
+    margin: 0;
+    display: inline;
+}
+svg{
+    fill:rgba(255, 166, 0, 0.63) ;
+    cursor: pointer;
+    
+}
+
+
+
+#heart{
+    margin:auto 20px;
+    width:35px;
+    height: 35px;
+    padding: 5px;
+
+    cursor: pointer;
+ border-radius: 50%;
+}
+#heart:hover{
+ 
+background-image: linear-gradient(316deg,rgba(255, 166, 0, 0.404),rgba(255, 0, 0, 0.692));
+    
+}
+
+.ingredient{
+    display: inline-block;
+    width: 30%;
+    margin: 5% 10% ;
+    font-size: 15px;
+    text-align: left;
+}
+#ingredients{
+    width: 90%;
+    margin: auto
+
+}
+.summary{
+    width: 80%;
+   padding: 13px;
+    margin-right: 10px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.CoutPerson{
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+
+}
+.CoutPerson:hover{
+    width: 19px;
+    height: 19px;
+}
+.amount{
+    margin: auto 3px;
+}
+.inputNum{
+    width: 40px;
+    height: 18px;
+    margin-right:8px ;
+}
+.sigleProduct{
+    font-size: medium;
+    height: 40px;
+   
+    border-bottom:rgba(224, 202, 161, 0.144)solid ;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+ 
+}
+.shop>img{
+    width: 20px;
+    height: 20px;
+    margin-left: 5px;
+}
+.shop{
+    padding: 15px;
+font-size: 20px;
+margin: auto;
+border: 0px;
+border-radius: 25px;
+background-image: linear-gradient(316deg,rgb(255, 123, 0),yellow);
+cursor: pointer;
+
+    display: block;
+ 
+    margin:50px auto;
+
+
+}
+.removItem{
+    color: white;
+    background-color: rgba(255, 166, 0, 0.842);
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    text-align: center;
+    padding: 1px;
+    cursor: pointer;
+    border: none;
+
+}
+.removItem:hover{
+    color: black;
+}
+#i-like-it{
+   visibility: hidden;
+    position: absolute;
+    right: 50%;
+    background-color: white;
+    box-shadow: 0 0 1rem rgba(255, 166, 0, 0.137);
+    opacity: 0.9;
+
+}
+
+.item{
+    width: 200px;
+    height: 60px;
+    padding: 10px;
+   cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid  rgba(128, 128, 128, 0.233);
+    
+}
+.item:hover{
+
+   background-color:rgba(224, 202, 161, 0.075);
+}
+
+.likeIt{
+    position: relative;
+    height: 60px;
+}
+.likeIt:hover #i-like-it{
+    visibility: visible;
+
+}
+
