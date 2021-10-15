@@ -22,10 +22,13 @@ export function addToShop(e){
     var name=document.createElement('p')
     name.innerText=element.getAttribute('data-key');
     divSingleProduct.appendChild(name);
-    var remove=document.createElement('button')
-  remove.innerText='X';
+  
+
+  var remove=document.createElement('button')
+  remove.innerHTML = "&times;";
   remove.setAttribute('class','removItem')
   remove.addEventListener('click',removeItem,false)
+
   divSingleProduct.appendChild(remove);
     divSingleProduct.setAttribute('class','sigleProduct');
     divProducts.appendChild(divSingleProduct);

@@ -253,7 +253,7 @@ background-image: linear-gradient(316deg,rgba(255, 166, 0, 0.404),rgba(255, 0, 0
 .inputNum{
     width: 40px;
     height: 18px;
-    margin-right:8px ;
+    margin-left: 20px;
 }
 .sigleProduct{
     font-size: medium;
@@ -335,3 +335,26 @@ cursor: pointer;
 
 }
 
+.alert {
+    padding: 20px;
+    background-color: #f44336;
+    color: white;
+    transition: 0.9s;
+    width: 30%;
+    display: none;
+  }
+  
+  .closebtn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+  }
+  
+  .closebtn:hover {
+    color: black;
+  }

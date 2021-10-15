@@ -38,7 +38,7 @@ export function itemToLike(){
     
     
         var p = document.createElement('p');
-        p.innerText = item[key].title.toUpperCase();
+        p.innerText = (item[key].title+' ').toUpperCase();
         p.setAttribute('class', 'title');
         div.appendChild(p);
     

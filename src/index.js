@@ -1,10 +1,10 @@
 import { getprepparation } from "./prepparation.js";
 
-//var myPassword1 = "?apiKey=b9f15989e84f4b139601a902f3d81e15&query=";
+//var myPassword2 = "?apiKey=b9f15989e84f4b139601a902f3d81e15&query=";
 
-//var myPassword1 = "?apiKey=7dab804b94da4af7a8762465cc22bbbc&query=";
-//var myPassword1 = "?apiKey=866996e8d3c94fbabf01157d317a1e55&query=";
-var myPassword1="?apiKey=872e5928c234421aa70b7a7f948f0b04&query=";
+var myPassword1 = "?apiKey=7dab804b94da4af7a8762465cc22bbbc&query=";
+var myPassword2 = "?apiKey=866996e8d3c94fbabf01157d317a1e55&query=";
+//var myPassword1="?apiKey=872e5928c234421aa70b7a7f948f0b04&query=";
 var myApi = 'https://api.spoonacular.com/recipes/complexSearch';
 
 var submit = document.querySelector('#submit');
@@ -24,7 +24,20 @@ function getRecipes() {
   else
     result ='tuna';
   fetch(myApi + myPassword1 +result)
-    .then((res) => res.json())
+    .then((res) =>{
+      
+      
+     if(res.status!=200){
+      var alert=document.querySelector('.alert')
+      alert.style.display='block';
+      return
+     }
+    else{
+      return   res.json();
+    }
+     
+
+       })
     .then((data) => {
 
       data.results.forEach(element => {
@@ -32,8 +45,20 @@ function getRecipes() {
 
 
 
-        fetch(`https://api.spoonacular.com/recipes/${element.id}/information${myPassword1}`)
-          .then((res) => res.json())
+        fetch(`https://api.spoonacular.com/recipes/${element.id}/information${myPassword2}`)
+          .then((res) =>{
+            
+           if(res.status!=200){
+            var alert=document.querySelector('.alert')
+            alert.style.display='block';
+            return
+           }
+          else{
+            return   res.json();
+          }
+           
+      
+             })
           .then((data) => {
             var div = document.createElement('div');
 

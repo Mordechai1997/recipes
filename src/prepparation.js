@@ -10,8 +10,8 @@ import { addToShop } from "./addToShop.js";
 
 
 //var myPassword = "?apiKey=7dab804b94da4af7a8762465cc22bbbc";
-//var myPassword = "?apiKey=b9f15989e84f4b139601a902f3d81e15";
-var myPassword="?apiKey=872e5928c234421aa70b7a7f948f0b04&query=";
+var myPassword = "?apiKey=b9f15989e84f4b139601a902f3d81e15";
+//var myPassword="?apiKey=872e5928c234421aa70b7a7f948f0b04&query=";
 
 
 var listProducts = document.querySelector('#list-products');
