@@ -47,7 +47,7 @@ export function getprepparation(event) {
 
       var pMinutes = document.createElement('p');//זמן הכנה
       const imgMinutes = new Image();
-      imgMinutes.src = './image/watch.png';
+      imgMinutes.src = './src/image/watch.png';
       imgMinutes.className = 'icon';
       pMinutes.appendChild(imgMinutes);
       var spanMinutes = document.createElement('span');
@@ -59,7 +59,7 @@ export function getprepparation(event) {
 
       var pServings = document.createElement('p');//כמות אנשים
       const imgServings = new Image();
-      imgServings.src = './image/person.png';
+      imgServings.src = './src/image/person.png';
       imgServings.className = 'icon';
       pServings.appendChild(imgServings);
       var spanServings = document.createElement('span');
@@ -72,7 +72,7 @@ export function getprepparation(event) {
 
       console.log(data)
       const imgPlus = new Image();//plus
-      imgPlus.src = './image/icon-plus.jpg';
+      imgPlus.src = './src/image/icon-plus.jpg';
       imgPlus.className = 'CoutPerson';
       imgPlus.id = 'plus';
       imgPlus.setAttribute('data-key', data.servings);
@@ -82,7 +82,7 @@ export function getprepparation(event) {
       divCoutPerson.appendChild(imgPlus);
 
       const imgMinus = new Image();//minus 
-      imgMinus.src = './image/minus-icon.png';
+      imgMinus.src = './src/image/minus-icon.png';
       imgMinus.className = 'CoutPerson';
       imgMinus.id = 'minus';
       imgMinus.addEventListener('click', ChangeNumPeople, false);
@@ -94,7 +94,7 @@ export function getprepparation(event) {
 
 
       const imgHeart = new Image();//like
-      imgHeart.src = './image/like-icon.png';
+      imgHeart.src = './src/image/like-icon.png';
       imgHeart.id = 'heart';
       imgHeart.setAttribute('data-key', id);
       imgHeart.addEventListener('click', addItemToStorage, false);

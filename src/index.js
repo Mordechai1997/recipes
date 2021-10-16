@@ -2,8 +2,8 @@ import { getprepparation } from "./prepparation.js";
 
 //var myPassword2 = "?apiKey=b9f15989e84f4b139601a902f3d81e15&query=";
 
-var myPassword1 = "?apiKey=7dab804b94da4af7a8762465cc22bbbc&query=";
-var myPassword2 = "?apiKey=866996e8d3c94fbabf01157d317a1e55&query=";
+var myPassword2 = "?apiKey=7dab804b94da4af7a8762465cc22bbbc&query=";
+var myPassword1 = "?apiKey=866996e8d3c94fbabf01157d317a1e55&query=";
 //var myPassword1="?apiKey=872e5928c234421aa70b7a7f948f0b04&query=";
 var myApi = 'https://api.spoonacular.com/recipes/complexSearch';
 
