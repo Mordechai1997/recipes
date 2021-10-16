@@ -146,7 +146,7 @@ export function getprepparation(event) {
       var buttonShop = document.createElement('button');
       buttonShop.innerText = 'ADD TO SHOPPING LIST';
       const imgShop = new Image();
-      imgShop.src = './image/shop.png';
+      imgShop.src = './src/image/shop.png';
       buttonShop.appendChild(imgShop);
 
       buttonShop.setAttribute('class', 'shop');
